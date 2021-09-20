@@ -5,13 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Calculator</title>
+
+    <!-- Favicons -->
+    <link href="calculator.png" rel="calculator-icon">
+
     <style>
         *{
             margin: 0;
             padding:0;
         }
      .fundo{
-         background-image:linear-gradient(45deg,cyan,yellow);
+         background-color: #FA8BFF;
+         background-image: linear-gradient(45deg, #FA8BFF 0%, #2BD2FF 52%, #2BFF88 90%);
          height: 100vh;
          color:white;
          font-family: Arial, Helvetica, sans-serif;
@@ -19,17 +24,18 @@
      }
      .Calculadora{
          position: absolute;
-         background-color:rgba(0, 0, 0, 0.8);
+         background-color: rgb(0 0 0 / 51%);
          top: 50%;
          left: 50%;
          transform:translate(-50%,-50%);
          border-radius: 15px;
          padding: 15px;
-
      }
+     
      .botao{
        width: 50px;  
        height: 50px;
+       border-radius: 10px;
        font-size: 25px;
        cursor: pointer;
        margin: 3px;
@@ -42,6 +48,7 @@
      }
     #resultado{
         background-color: white;
+        border-radius: 8px;
         width: 207px;
         height: 30px;
         margin: 5px;
